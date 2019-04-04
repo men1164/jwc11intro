@@ -1,0 +1,130 @@
+@font-face {
+    font-family: mitr;
+    src: url("Mitr-ExtraLight.ttf") format("truetype");
+}
+
+body {
+    height: 100%;
+    background-image: linear-gradient(to bottom, #1a1d7a, #332070, #3f2567, #472b5f, 
+    #4b3158, #583556, #623954, #6a3f53, #7e434f, #8e4b46, #96573a, #97662e);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container{
+    margin-top: 8em;
+    font-family: mitr;
+    color: white;
+}
+  
+.form-btn {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #555555;
+    padding: 0 20px;
+    height: 50px;
+    border-radius: 25px;
+    background: -webkit-linear-gradient(bottom, #4b3158,  #1a1d7a);
+    position: relative;
+    z-index: 1;
+    transition: all 0.4s;
+}
+  
+.form-btn::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    transition: all 0.4s;
+}
+  
+.form-btn:hover {
+  color: #fff;
+}
+  
+.form-btn:hover:before {
+  opacity: 0;
+}
+
+#home, #his, #rev{
+    visibility: hidden;
+    opacity: 0.0;
+    position: relative;
+}
+
+.main__item svg {
+    width: 70px;
+    height: 70px;
+    stroke: rgb(124, 124, 133);
+    stroke-width: 1;
+    stroke-linecap: round;
+    stroke-linejoin: miter;
+    fill: none;
+    transition: all 0.3s ease;
+    padding: 20px;
+}
+
+.main__item svg:hover{
+    stroke: #fff;
+    cursor: pointer;
+}
+
+#underline{
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    margin: 20px 0px;
+}
+
+p {
+    text-align: justify;
+    font-size: 18px;
+}
+
+.navbar{
+    background-color: #1a1d7a;
+    position: -webkit-sticky;
+    position: sticky;
+}
+
+div.timetable {
+    position: relative;
+    width: 800px;
+    margin: 0 auto;
+}
+
+div.timetable table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+div.timetable th, div.timetable td {   
+    border-bottom-style: dotted;
+    border-width: 1px;
+    padding: 0px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 100px;
+}
+
+  .fa-facebook {
+    background: transparent;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: transparent;
+    color: white;
+  }
+
