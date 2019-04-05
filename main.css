@@ -4,9 +4,7 @@
 }
 
 body {
-    height: 100%;
-    background-image: linear-gradient(to bottom, #1a1d7a, #332070, #3f2567, #472b5f, 
-    #4b3158, #583556, #623954, #6a3f53, #7e434f, #8e4b46, #96573a, #97662e);
+    background-image: url("bg.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -92,25 +90,7 @@ p {
     background-color: #1a1d7a;
     position: -webkit-sticky;
     position: sticky;
-}
-
-div.timetable {
-    position: relative;
-    width: 800px;
-    margin: 0 auto;
-}
-
-div.timetable table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-div.timetable th, div.timetable td {   
-    border-bottom-style: dotted;
-    border-width: 1px;
-    padding: 0px;
-    font-size: 12px;
-    color: #fff;
+    opacity: 0.85;
 }
 
 .fa {
